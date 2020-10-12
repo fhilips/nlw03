@@ -1,7 +1,9 @@
 <h1 align="center">
     <img src="./web/src/images/logo.svg" />
+</h1>
 
-    Happy - Web
+<h1 align="center">
+    <img src="./web/src/images/merchan.png" />
 </h1>
 
 ## Menu
