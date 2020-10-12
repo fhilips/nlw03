@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import backgroundImg from '../../images/landing.svg';
 
 export const Container = styled.div`
     width: 100vw;
@@ -24,7 +25,7 @@ export const ContentWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    background: url('../../images/landing.svg') no-repeat 80% center;
+    background: url(${backgroundImg}) no-repeat 80% center;
 
     main {
         max-width: 350px;
