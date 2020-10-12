@@ -9,6 +9,8 @@ import mapMarkerImg from '../images/map-marker.svg';
 
 import { Container, ContentWrapper } from '../styles/pages/orphanages-map';
 
+const mapBoxURL = `https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`
+
 const OrphanagesMap = () => {
     return (
         <Container>
@@ -32,7 +34,7 @@ const OrphanagesMap = () => {
                 style={{ width: '100%', height: '100%' }}
             >
                 <TileLayer 
-                    url={`https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+                    url={mapBoxURL}
                 />
             </Map>
 
