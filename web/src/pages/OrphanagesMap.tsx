@@ -6,12 +6,14 @@ import { Map, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 import mapMarkerImg from '../images/map-marker.svg';
-import '../styles/pages/orphanages-map.css';
+// import '../styles/pages/orphanages-map.css';
 
-function OrphanagesMap() {
+import { Container, ContentWrapper } from '../styles/pages/orphanages-map';
+
+const OrphanagesMap = () => {
     return (
-        <div id="page-map">
-            <aside>
+        <Container>
+            <ContentWrapper>
                 <header>
                     <img src={mapMarkerImg} alt="Happy" />
 
@@ -23,7 +25,7 @@ function OrphanagesMap() {
                     <strong>Belo Horizonte</strong>
                     <span>Minas Gerais</span>
                 </footer>
-            </aside>
+            </ContentWrapper>
 
             <Map 
                 center={[-19.9491584, -43.9549952]}
@@ -38,7 +40,7 @@ function OrphanagesMap() {
             <Link to="" className="create-orphanages">
                 <FiPlus size={32} color="#FFF" />
             </Link>
-        </div>
+        </Container>
     );
 }
 
