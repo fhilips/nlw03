@@ -19,6 +19,7 @@ This page was developed at Rocketseat's Next Level Week event!
 - [ReactJS]()
 - [React Leaflet]()
 - [MapBox]()
+- [Styled Components]()
 
 ## 🖥 How to use
 
