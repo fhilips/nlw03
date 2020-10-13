@@ -1,0 +1,40 @@
+version: "3"
+
+networks:
+    happy-network:
+        driver: "bridge"
+
+services:
+    postgres:
+        env_file: .env
+        container_name: happy-postgres-container
+        image: postgres
+        restart: always
+        environment:
+            - POSTGRES_USERNAME=${POSTGRES_USERNAME}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+            - POSTGRES_DB=${DB_NAME}
+        volumes:
+            - ./postgres-data:/data/db
+        networks:
+            - happy-network
+        ports:
+            - "5432:5432"
+
+    api:
+        container_name: happy-api-container
+        build: .
+        image: happy-api
+        restart: always
+        command: >
+            bash -c "yarn typeorm migration:run && yarn dev"
+        volumes:
+            - ./:/var/www/api
+        networks:
+            - happy-network
+        ports:
+            - "3333:3333"
+        links:
+            - postgres
+        depends_on:
+            - postgres
