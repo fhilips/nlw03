@@ -34,6 +34,6 @@ $ cd nlw03/web
 
 Then, install dependencies: just run **yarn**
 
-After that, a web page will be open on your main browser!
+After that, run **yarn start** and a web page will be open on your main browser!
 
 Enjoy!
