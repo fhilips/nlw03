@@ -16,6 +16,7 @@ $ git clone https://github.com/yants95/nlw03/tree/master/api
 
 # Enter on folder
 $ cd nlw03/api
+```
 
 Then, install dependencies: run **yarn**
 

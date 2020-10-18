@@ -21,6 +21,7 @@ $ git clone https://github.com/yants95/nlw03/tree/master/web
 
 # Enter on folder
 $ cd nlw03/web
+```
 
 Then, install dependencies: just run **yarn**
 
