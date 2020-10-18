@@ -1,6 +1,6 @@
 ## 🚀 Technologies
 
-This API was developed at Rocketseat's Next Level Week event!
+This app was developed at Rocketseat's Next Level Week event!
 
 - [Expo]()
 - [TypeScript]()
@@ -8,24 +8,20 @@ This API was developed at Rocketseat's Next Level Week event!
 
 ## 🖥 How to use
 
-In order to clone and run this API in your computer, you'll need to follow the steps below
+In order to clone and run this app in your computer, you'll need to follow the steps below
 
 ```bash
 # Clone repository
-$ git clone https://github.com/yants95/nlw03/tree/master/api
+$ git clone https://github.com/yants95/nlw03/tree/master/mobile
 
 # Enter on folder
-$ cd nlw03/api
+$ cd nlw03/mobile
 ```
 
-Then, install dependencies: run **yarn**
+Then, install dependencies: run **expo install**
 
-In order to install the environment, turn on your Docker app, yet on **nlw03/api** folder and execute **yarn run up**
+After, run **yarn start** and follow the instructions that will be displayed.
 
-To stop, run **yarn run stop**
-
-To drop your container and data, run **yarn run down**
-
-After that, the API will be available on **http://localhost:3333**
+You can run this app on your computer using iOS and Android simulators or scanning QR Code and launch on your smartphone.
 
 Enjoy!
