@@ -5,8 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
-    "up": "docker-compose up",
+    "up": "docker-compose up -d",
     "stop": "docker-compose stop",
+    "down": "docker-compose down",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
